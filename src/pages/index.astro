@@ -1,0 +1,27 @@
+---
+import Layout from '../components/layouts/layout.astro';
+import Footer from "../components/footer.astro";
+import MoreDetails from "../components/more-details.astro";
+import GeneratePasswordBox from "../components/generate-password-box.svelte";
+import ShowPasswordBox from "../components/show-password-box.svelte";
+---
+
+<Layout title="Tu Clave">
+	<main>
+		<h1 class="text-6xl font-bold leading--none text-center mb-4">Generador de contraseñas gratis</h1>
+		<!--<p class="p-2 text-center">-->
+		<!--	Tu clave segura en un solo click-->
+		<!--</p>-->
+		<p class="text-center px-10">
+			Te damos la bienvenida al sitio web "tuclave.es". En esta página podrás crear todas tus contraseñas seguras.
+		</p>
+		<div class="mt-2 grid grid-cols-1 md:grid-cols-2 items-end gap-8">
+			<GeneratePasswordBox client:load />
+			<ShowPasswordBox client:load />
+		</div>
+
+
+		<MoreDetails />
+		<Footer />
+	</main>
+</Layout>
