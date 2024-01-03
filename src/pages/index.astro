@@ -8,12 +8,9 @@ import ShowPasswordBox from "../components/show-password-box.svelte";
 
 <Layout title="Tu Clave">
 	<main>
-		<h1 class="text-6xl font-bold leading--none text-center mb-4">Generador de contraseñas gratis</h1>
-		<!--<p class="p-2 text-center">-->
-		<!--	Tu clave segura en un solo click-->
-		<!--</p>-->
-		<p class="text-center px-10">
-			Te damos la bienvenida al sitio web "tuclave.es". En esta página podrás crear todas tus contraseñas seguras.
+		<h1 class="text-4xl md:text-6xl font-bold leading--none text-center my-4">Generador de contraseñas gratis</h1>
+		<p class="text-center md:px-10">
+			¡Te damos la bienvenida al sitio web <a class="underline" href="/">tuclave.es</a>! En esta página podrás crear claves seguras.
 		</p>
 		<div class="mt-2 grid grid-cols-1 md:grid-cols-2 items-end gap-8">
 			<GeneratePasswordBox client:load />
